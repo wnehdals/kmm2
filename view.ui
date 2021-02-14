@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dialog</class>
+ <widget class="QDialog" name="dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1120</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="send_button">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>340</y>
+     <width>231</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color : rgb(241, 233, 0);</string>
+   </property>
+   <property name="text">
+    <string>전송</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="file_path_button">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>340</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>찾기</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>30</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>이미지 첨부</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="img_file_path_label">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>310</y>
+     <width>251</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="message_edittext">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>50</y>
+     <width>231</width>
+     <height>221</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>70</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>전송 실패 목록</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>0</y>
+     <width>961</width>
+     <height>861</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color : rgb(212, 212, 212);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>30</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>나눔스퀘어라운드 Light</family>
+    </font>
+   </property>
+   <property name="text">
+    <string>메시지</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="load_friend_Button">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>친구목록 불러오기</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>161</width>
+     <height>851</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(235, 235, 235);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="friend_table">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>30</y>
+     <width>421</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>이름</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>정의1</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>정의2</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>정의3</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QTableWidget" name="fail_name_table">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>90</y>
+     <width>101</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>이름</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="ka1">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>390</y>
+     <width>461</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ka2">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>400</y>
+     <width>471</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="img_priview">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>50</y>
+     <width>251</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color : rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>사진 미리보기</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="success_name_table">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>430</y>
+     <width>101</width>
+     <height>291</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="fail_excel_save">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>370</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>엑셀로 저장</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>410</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>전송 성공 목록</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="success_excel_save">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>730</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>엑셀로 저장</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="time_label">
+   <property name="geometry">
+    <rect>
+     <x>1040</x>
+     <y>310</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="time_plus">
+   <property name="geometry">
+    <rect>
+     <x>1080</x>
+     <y>310</y>
+     <width>21</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>+</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="time_minus">
+   <property name="geometry">
+    <rect>
+     <x>1020</x>
+     <y>310</y>
+     <width>21</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>280</y>
+     <width>231</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>전송 속도(동영상 전송시 10 이상 권장)</string>
+   </property>
+  </widget>
+  <zorder>label_5</zorder>
+  <zorder>label_10</zorder>
+  <zorder>send_button</zorder>
+  <zorder>file_path_button</zorder>
+  <zorder>label_2</zorder>
+  <zorder>img_file_path_label</zorder>
+  <zorder>message_edittext</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_11</zorder>
+  <zorder>load_friend_Button</zorder>
+  <zorder>friend_table</zorder>
+  <zorder>fail_name_table</zorder>
+  <zorder>ka1</zorder>
+  <zorder>ka2</zorder>
+  <zorder>img_priview</zorder>
+  <zorder>success_name_table</zorder>
+  <zorder>fail_excel_save</zorder>
+  <zorder>label</zorder>
+  <zorder>success_excel_save</zorder>
+  <zorder>time_label</zorder>
+  <zorder>time_plus</zorder>
+  <zorder>time_minus</zorder>
+  <zorder>label_6</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,1 @@
+pyinstaller --add-data "view.ui;light_gray_clip1.png" -F -w main.py
